@@ -1,0 +1,92 @@
+/* Font weights */
+$fontWeightExtraLight: 200;
+$fontWeightLight: 300;
+$fontWeightRegular: 400;
+
+$fontWeightSemiBold: 600;
+$fontWeightBold: 700;
+$fontWeightBlack: 900;
+
+/* Font Styles */
+$fontStyleItalic: italic;
+
+$fontWeights: (
+  display4: $fontWeightExtraLight,
+  display3: $fontWeightRegular,
+  display2: $fontWeightRegular,
+  display1: $fontWeightRegular,
+  headline: $fontWeightRegular,
+  title: $fontWeightLight,
+  subheadline: $fontWeightSemiBold,
+  body2: $fontWeightSemiBold,
+  body1: $fontWeightRegular,
+  caption: $fontWeightRegular,
+  link: $fontWeightSemiBold,
+  gridheader:$fontWeightRegular
+);
+$fontSize: (
+  display4: 7rem,
+  display3: 3.5rem,
+  display2: 2.8rem,
+  display1: 2.1rem,
+  headline: 1.5rem,
+  title: 1.25rem,
+  subheading: 1rem,
+  body2: 0.8rem,
+  body1: 0.8rem,
+  caption: 0.7rem,
+  link: 0.8rem,
+  gridheader: 0.6rem
+);
+
+/* Font Styles categories */
+
+/* Categories */
+$display4: "display4";
+$display3: "display3";
+$display2: "display2";
+$display1: "display1";
+$headline: "headline";
+$title: "title";
+$subheadline: "subheadline";
+$body2: "body2";
+$body1: "body1";
+$caption: "caption";
+$link: "link";
+$gridheader: "gridheader";
+
+$pipeline-column-properties: (
+  loanNumber: 15% left var(--font-color-link) 1rem,
+  borrowers: 10% left,
+  subjectPropertyAddress: 14% left,
+  occupancy: 7% left,
+  loanType: 4% left,
+  product: 7% left,
+  investor: 7% left,
+  interestRate: 4% right,
+  loanAmount: 9% left,
+  totalConditions: 3% right,
+  dataConditions: 3% right,
+  documentConditions: 3% right,
+  lastRunDate: 8% left,
+  assignee: 6% left,
+  status: 6% left
+);
+
+$pipeline-header-properties: (
+  loanNumber: 15% left,
+  borrowers: 10% left,
+  subjectPropertyAddress: 14% left,
+  occupancy: 7% left,
+  loanType: 4% left,
+  product: 7% left,
+  investor: 7% left,
+  interestRate: 4% right,
+  loanAmount: 9% left,
+  totalConditions: 3% right,
+  dataConditions: 3% right,
+  documentConditions: 3% right,
+  lastRunDate: 8% left,
+  assignee: 6% left,
+  status: 6% left
+);

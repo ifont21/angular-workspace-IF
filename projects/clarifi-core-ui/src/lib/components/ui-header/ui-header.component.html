@@ -1,0 +1,26 @@
+<mat-toolbar class="header__toolbar">
+    <!-- <clarifi-icon class="header--right-space header--bigger-icon" icon="view_table"></clarifi-icon>
+    <clarifi-icon class="header--right-space header--bigger-icon" icon="lad"></clarifi-icon> -->
+    <span class="header__spacer"></span>
+    <!-- <clarifi-icon icon="search"></clarifi-icon>
+    <clarifi-icon class="header--left-space" icon="notifications"></clarifi-icon> -->
+  
+    <ng-container *ngIf="isAuthenticated; else login">
+      <button mat-button [matMenuTriggerFor]="menu" class="header--left-space">
+        <!-- <clarifi-icon class="header__user-img" icon="borrower"></clarifi-icon> -->
+        <span class="header__username" data-testid="username">Andy Admin</span>
+        <!-- <clarifi-icon icon="arrow_drop_down"></clarifi-icon> -->
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Profile</button>
+        <button mat-menu-item>Logout</button>
+      </mat-menu>
+    </ng-container>
+  
+    <ng-template #login>
+      <a href="javascript:void(0)" (click)="logIn()" data-testid="login">
+        <span class="header__login header--left-space">Sign In</span>
+      </a>
+    </ng-template>
+  
+  </mat-toolbar>

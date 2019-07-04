@@ -1,0 +1,48 @@
+@import '../../styles/global/main';
+
+.header {
+  &__toolbar {
+    background: var(--primary-navbar-color);
+    color: var(--common-flow);
+    height: 3.4rem;
+    button {
+      border: none;
+      background: inherit;
+      ::ng-deep .icon-clarifi-arrow_drop_down {
+        color: var(--font-color-caption);
+      }
+    }
+  }
+  &__spacer {
+    flex: 1 1 auto;
+  }
+  &__user-img {
+    ::ng-deep .icon-clarifi-borrower {
+      border: 1px solid;
+      border-radius: 50%;
+      color: var(--font-color-display1);
+    }
+  }
+  &__username {
+    margin-left: 0.7rem;
+    position: relative;
+    bottom: 0.2rem;
+    @include fontStyle($caption, null, 0.8rem);
+  }
+  &__login {
+    @include fontStyle($caption, null, 0.8rem);
+    position: relative;
+    bottom: 0.2rem;
+  }
+  &--left-space {
+    margin-left: 2rem;
+  }
+  &--right-space {
+    margin-right: 1rem;
+  }
+  &--bigger-icon {
+    ::ng-deep {
+      font-size: 1.5rem;
+    }
+  }
+}

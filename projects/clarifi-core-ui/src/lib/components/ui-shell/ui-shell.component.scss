@@ -1,0 +1,47 @@
+@import '../../styles/global/main';
+
+:host {
+  --primary-navbar-color: #{$primary-navbar-color};
+  --primary-color: #{$primary-color};
+  --primary-panel-color: #{$primary-panel-color};
+  --primary-button-color: #{$primary-button-color};
+  --secondary-panel-color: #{$secondary-panel-color};
+  --card-tiles-color: #{$card-tiles-color};
+  --no-overlay-color: #{$no-overlay-color};
+  --font-btn-dark-color: #{$font-btn-dark-color};
+
+  --children-header-color: #{$children-header-color};
+  --eligible-color: #{$eligible-color};
+  --no-eligible-color: #{$no-eligible-color};
+  --common-flow: #{$common-flow};
+
+  --bg-inactive-color: #{$bg-inactive-color};
+  --font-inactive-btn-color: #{$font-inactive-btn-color};
+  --font-inactive-color: #{$font-inactive-color};
+
+  --input-text-color: #{$input-text-color};
+  --upload-boxes: #{$upload-boxes};
+
+  --font-color-display4: #{$font-color-main};
+  --font-color-display3: #{$font-color-main};
+  --font-color-display2: #{$font-color-main};
+  --font-color-display1: #{$font-color-main};
+
+  --font-color-headline: #{$font-color-headline};
+  --font-color-title: #{$font-color-headline};
+  --font-color-subheading: #{$font-color-main};
+
+  --font-color-body2: #{$font-color-body};
+  --font-color-body1: #{$font-color-body};
+
+  --font-color-caption: #{$font-color-caption};
+  --font-color-link: #{$font-color-link};
+  --font-color-gridheader: #{$font-color-gridheader};
+}
+
+.clarifi-root {
+  &__wrapper {
+    background: var(--primary-color);
+    min-height: 100vh;
+  }
+}
