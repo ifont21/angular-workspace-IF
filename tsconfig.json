@@ -1,7 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": ".",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -12,11 +12,21 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
-    "typeRoots": ["node_modules/@types"],
+    "typeRoots": ["projects/clarifi-core-ui/node_modules/@types"],
     "lib": ["es2018", "dom"],
     "paths": {
+      "@angular/*": ["projects/clarifi-core-ui/node_modules/@angular/*"],
+      "@angular/core/*": ["projects/clarifi-core-ui/node_modules/@angular/core/*"],
+      "@angular/core": ["projects/clarifi-core-ui/node_modules/@angular/core"],
+      "@angular/material": ["projects/clarifi-core-ui/node_modules/@angular/material"],
+      "@angular/animations": ["projects/clarifi-core-ui/node_modules/@angular/animations"],
+      "@angular/animations/*": ["projects/clarifi-core-ui/node_modules/@angular/animations/*"],
+      "@angular/material/*": ["projects/clarifi-core-ui/node_modules/@angular/material/*"],
       "clarifi-core-ui": ["dist/clarifi-core-ui"],
-      "clarifi-core-ui/*": ["dist/clarifi-core-ui/*"]
+      "clarifi-core-ui/*": ["dist/clarifi-core-ui/*"],
+      "@core-dependencies/*": ["projects/clarifi-core-ui/node_modules/*"],
+      "@angular/compiler-cli/*": ["projects/clarifi-core-ui/node_modules/@angular/compiler-cli/*"],
+      "@angular/compiler/*": ["projects/clarifi-core-ui/node_modules/@angular/compiler/*"]
     }
   }
 }

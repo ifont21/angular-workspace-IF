@@ -8,6 +8,7 @@
 
 # dependencies
 /node_modules
+/projects/clarifi-core-ui/node_modules
 yarn.lock
 
 # IDEs and editors
